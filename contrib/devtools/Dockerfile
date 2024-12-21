@@ -6,11 +6,11 @@ FROM bufbuild/buf:1.9.0 as BUILDER
 FROM golang:1.20-alpine
 
 RUN apk add --no-cache \
-  nodejs \
-  npm \
-  git \
-  make \
-  clang-extra-tools
+    nodejs \
+    npm \
+    git \
+    make \
+    clang-extra-tools
 
 RUN npm install -g swagger-combine
 
